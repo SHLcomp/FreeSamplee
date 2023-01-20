@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+/* header-pic */
+.header-pic{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    top: 3cm;
+    left: 2cm;
+}
+.opening{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title{
+    display: flex;
+    top: 2cm;
+    left: 2cm;
+}
+.title:hover{
+    border: 6px , transparent, solid;
+}
+
+.p2{
+    position: inherit;
+    top: 1cm;
+}
+h1{
+    size: 10cm;
+    font-family: monospace;
+    color: white;
+   font-size: 3rem;
+}
+.infoweb{
+    position: absolute;
+    margin-top: 5cm;
+    margin-left: 22cm;
+}
+.info{
+    color: black;
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 2cm;
+}
+/*sign in info */
+.form-container{
+    display: flex;
+    position: absolute;
+    top: 15cm;
+    left: 17cm;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    width: 50%;
+}
+.form-p{
+    font-size: 18px;
+}
+.end-signup{
+    padding: 10px 10px 10px 10px;
+    margin-top: 5px;
+    border-radius: 20%;
+    border-style: double;
+    background: linear-gradient(0.25turn, #fd66e2, #d15dff);
+    font-size: 20px;
+}
+.email-input{
+    padding: 7px 7px;
+    text-align: right;
+    font-size: 20px;
+}
+.email2-input{
+    padding: 7px 7px;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* extras */
+.extras-container{
+    background-color: #ffffffb1;
+    border-radius: 20%;
+    position: absolute;
+    top: 20cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.extras-title{
+    text-align: center;
+    color: black;
+}
+.extras-p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.extras-p-div{
+    
+    padding-left: 5cm;
+    padding-right: 5cm;
+}
+/* extras2 */
+.extras2-container{
+    position: absolute;
+    top: 25cm;
+    left: 13cm;
+    display: flex;
+}
+.extras-pic{
+    width: 100px;
+    height: 100;
+}
+
+
+
+/* play button */
+.submitbtn{
+    border-radius: 20%;
+    padding: 10px 20px 20px 20px;
+    position: absolute;
+    top: 3cm;
+    left: 26cm;
+    background-color: rgb(90, 243, 243);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submitbtn:hover{
+    border-radius: 10%;
+}
+.a-submitbtn{
+    text-decoration: none;
+    color: black;
+}
+.submitbtnimg{
+    width: 34.2px;
+    height: 34.2px;
+    position: relative;
+    top: 9px;
+}
+
+
+/*header*/
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(66, 66, 181);
+    top: -1px;
+}
+
+.nav-item{
+    list-style: none;
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav-branding{
+    color: white;
+    font-style: bold;
+    font-size: 2.8rem;
+    text-decoration: none;
+}
+#brandname{
+    position: fixed;
+    left: 3cm;
+}
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    
+}
+.nav-menu, .nav-branding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    transition: 0.3s;
+}
+.nav-menu{
+    width: 100%;
+    padding: 0 100px;
+}
+.a{
+    transition: 0.5s ease;
+}
+.logo{
+    position: absolute;
+    left: .01cm;
+    top: -1cm;
+    width: 150px;
+    height: 150px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1cm;
+    transition: 0.3s;
+}
+.a:hover{
+    color: rgb(158, 24, 24);
+    font-style: bold;
+}
+
+.burg{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 6.9cm;
+    top: .4cm;
+}
+.bar{
+    display: block;
+    width: 46px;
+    height: 6px;
+    margin: 5px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+}
