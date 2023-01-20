@@ -95,7 +95,7 @@ h2{
     left: 9cm;
     animation: pop-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both ;
 }
-@-webkit-keyframes pop-up {
+@keyframes pop-up {
     0%{
         transform: translateY(0);
         transform-origin: 50% 50%;
