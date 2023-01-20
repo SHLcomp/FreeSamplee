@@ -1,54 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>واجهة الموقع</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a class="a" href="index.html">  الصفحة الرئيسية</a></li>
-                <li> <a class="a" href="index.html">طريقة الدفع</a></li>
-                <li> <a class="a" href="index.html">تعبئة الرصيد</a></li>
-                <li> <a class="a" href="daf3.html">تعبئة الرصيد</a></li>
-            </ul>
-            
-        </nav>
-    </header>
-
-    <div class="phonepic">
-        <img src="phone2.png" alt="">
-    </div>
-    <div>
-        <h1 class="title">افكار افضل
-            لنمو اسرع</h1>
-
-    <p class="title-p">جميع خدمات السوشال ميديا في مكان واحد فقط</p> 
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    background-color: black;
+}
+header{
+    background-color: transparent;
+    width: 100%;
+    min-height: 7vh;
+    background: linear-gradient(black, #9198e5);
+}
+ul{
+    display: flex;
+    gap: 1cm;
+    margin-left: 20cm;
+    margin-top: 10px;
+}
+li{
+    list-style: none;
+    font-size: 1.3rem;
     
-            <div class="btn">
-                سجل الآن
-            </div>
-        </div>
-
-
-
-        <div class="sign">
-            <h2>تصفح جميع ميزات الموقع عن طريق
-                تسجيل الدخول</h2>
-
-            <p>يرجى وضع اليوزر والباسورد لتسجيل الدخول</p>   
-            
-                <div class="sign-options">
-                <button type="submit"> سجل الدخول</button>
-                <input type="text" placeholder="الايميل" required>
-                <input type="text" placeholder="الرمز السري" required>
-                
-                    </div>
-
-        </div>
-</body>
-</html>
+}
+.a{
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    transition: .5s;
+}
+.a:hover{
+    color: aqua;
+}
+.phonepic{
+    width: 350px;
+    height: 455.5px;
+    display: flex;
+    position: absolute;
+    top: 2cm;
+    transform: rotateZ(-15deg);
+    transition: 1s;
+}
+.phonepic:hover{
+    transform: rotateZ(15deg);
+    transform: translate(50%);
+}
+.title{
+    display: flex;
+    position: absolute;
+    top: 4cm;
+    left: 17cm;
+    font-size: 4rem;
+    color: white;
+    text-align: right;
+}
+.title-p{
+    display: flex;
+    position: absolute;
+    top: 6.6cm;
+    left: 21cm;
+    font-size: 1.3rem;
+    color: white;
+    text-align: right;
+}
+.btn{
+    border: solid 2px;
+    background-color: yellow;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 8cm;
+    left: 24cm;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: linear-gradient(lightyellow, black);;
+}
+.sign{
+    display: flex;
+    position: absolute;
+    top: 18cm;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+}
+h2{
+    position: absolute;
+    left: 9cm;
+    animation: pop-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both ;
+}
+@-webkit-keyframes pop-up {
+    0%{
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100%{
+        transform: translateY(-50px);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+}
+p{
+    position: absolute;
+    top: 2cm;
+    left: 18cm;
+}
+.sign-options{
+    position: absolute;
+    top: 4cm;
+    left: 18cm;
+    padding: 30px 0px;
+}
